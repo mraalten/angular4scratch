@@ -1,0 +1,6 @@
+<ul class="produkten">
+  <li *ngFor="let produkt of produkten"
+      (click)="onSelect(produkt)">
+    <span class="badge">{{produkt.id}}</span> {{produkt.name}}
+  </li>
+</ul>
